@@ -1,0 +1,186 @@
+<html>
+<style>
+    body {
+        margin: auto;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #navBar {
+        position: relative;
+        left: 0px;
+        height: 5.5vh;
+        width: 100%;
+        background-color: black;
+        color: rgb(240, 240, 240);
+        font-size: 3vh;
+        text-align: right;
+        margin: auto;
+        padding-top: 2vh;
+    }
+
+    #navBar a {
+        color: inherit;
+        /* blue colors for links too */
+        text-decoration: inherit;
+        /* no underline */
+    }
+
+    body {
+        margin: none;
+        text-align: center;
+        background-color: rgb(29, 29, 29);
+    }
+
+    h1 {
+        padding-top: 0.5vh;
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(240, 240, 240);
+    }
+
+    .main {
+        min-height: 20vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .album {
+        flex: 0;
+        border-radius: 10%;
+        height: 35vh;
+        max-width: 90vw;
+        aspect-ratio: 4/3 auto;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        aspect-ratio: inherit;
+    }
+
+    .hover {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 10%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .hover p {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+    }
+
+    .hover .imgtitle {
+        margin-top: 10.5vh;
+        font-size: 6vh;
+    }
+
+    .hover:hover {
+        background-color: rgba(0, 0, 0, 0.40);
+        cursor: grab;
+    }
+</style>
+
+<body>
+    <div id="navBar">
+        <a href="index.html"><span style="padding-right: 15px">Graphic Narrative</span></a>
+        <a href="analysis.html"><span style="padding-right: 15px">Analysis</span></a>
+        <a href="citations.html"><span style="padding-right: 20px">Citations</span></a>
+    </div>
+    <h1>Detailed Analysis</h1>
+    <div class="main">
+        <div class="album">
+            <image src="example.png">
+            </image>
+            <div class="hover" onclick="redirect('analysis/struggles.html')">
+                <p class="imgtitle">
+                    Struggles and Injustice
+                </p>
+            </div>
+        </div>
+        <div class="album">
+            <image src="example.png">
+            </image>
+            <div class="hover" onclick="redirect('analysis/community.html')">
+                <p class="imgtitle">
+                    Building Community
+                </p>
+            </div>
+        </div>
+        <div class="album">
+            <image src="example.png">
+            </image>
+            <div class="hover" onclick="redirect('analysis/advocate.html')">
+                <p class="imgtitle">
+                    Becoming an Advocate
+                </p>
+            </div>
+        </div>
+        <div class="album">
+            <image src="example.png">
+            </image>
+            <div class="hover" onclick="redirect('analysis/setbacks.html')">
+                <p class="imgtitle">
+                    Setbacks and Legal Challenges
+                </p>
+            </div>
+        </div>
+        <div class="album">
+            <image src="example.png">
+            </image>
+            <div class="hover" onclick="redirect('analysis/growth.html')">
+                <p class="imgtitle">
+                    Perseverance and Growth
+                </p>
+            </div>
+        </div>
+        <div class="album">
+            <image src="example.png">
+            </image>
+            <div class="hover" onclick="redirect('analysis/conclusion.html')">
+                <p class="imgtitle">
+                    Conclusion
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function redirect(url) {
+        window.location.href = url;
+    }
+</script>
