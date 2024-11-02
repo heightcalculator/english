@@ -68,37 +68,13 @@
         /* no underline */
     }
 
-    .sad {
-        margin-left: 1000px;
-        width: 100%;
-        background-color: rgb(29, 29, 29);
-        color: aliceblue;
-    }
-
-    .happy {
-        background-color:beige;
-        color: #333;
-    }
-
-    .sadToHappy {
-        width: 100%;
-        height: 3vh;
-        background: linear-gradient(to bottom, rgb(29, 29, 29) 0%, beige 100%)
-    }
-
-    .HappyToSad {
-        width: 100%;
-        height: 3vh;
-        background: linear-gradient(to bottom, beige 0%, rgb(29, 29, 29) 100%)
-    }
-
     .panel img {
         position: relative;
-        width: 30vw;
+        height: 84vh;
         padding-left: 3vw;
         padding-right: 3vw;
-        padding-top: 1.5vh;
-        padding-bottom: 1.5vh;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
     }
 
     .panel {
@@ -108,6 +84,9 @@
         padding-bottom: 1vh;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 18px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
     }
 
     .panel p {
@@ -129,25 +108,32 @@
 
     .container {
         display: inline-block;
+        /* height: 70vh; */
+        width: min-content;
     }
 
     .text-block {
         display: none;
         position: fixed;
         top: 50%;
-        /* Position below the hover target */
-        left: 31vw;
+        left: 77vw;
         background-color: #333;
         color: #fff;
         padding: 10px;
         border-radius: 5px;
-        width: 35vw;
+        width: 20vw;
         margin-top: 5px;
         z-index: 1;
+        transform: translate(0%, -50%);
     }
 
     .container:hover .text-block {
         display: block;
+    }
+
+    h2 a {
+        text-decoration: none;
+        color: inherit;
     }
 </style>
 
@@ -156,155 +142,156 @@
 <body>
     <div id="navBar">
         <a href="index.html"><span style="padding-right: 15px">Graphic Narrative</span></a>
-        <a href="analysis.html"><span style="padding-right: 15px">Analysis</span></a>
+        <a href="background.html"><span style="padding-right: 15px">Background</span></a>
+        <a href="statement.html"><span style="padding-right: 15px">Artist Statement</span></a>
         <a href="citations.html"><span style="padding-right: 20px">Citations</span></a>
     </div>
     <div id="title">
-        <h1>Undocumented & Unstoppable</h1>
+        <h1 style="margin-left: 2vw;margin-right: 2vw;">Journey for Justice: Ju Hong's Story</h1>
         <img id="scrollBar" onclick="scrollFromTop()" src="https://www.svgrepo.com/show/97981/down-arrow.svg"></img>
     </div>
     <div>
-        <h2 style="text-align: center; height: auto;">Struggles and Injustice</h2>
-        <div class="panel sad" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.<sup><a
-                        href="citations.html">[1]</a></sup>
+        <h2 style="text-align: center; height: auto;"><a href="background/struggles.html">Struggles and Injustice </a>
+        </h2>
+        <div class="panel" style="background-color: #ffffff;">
             <div class="container">
-                <span class="info">🛈</span>
-                <div class="text-block">This is the text block that appears on hover.</div>
+                <img class="info"
+                    src="images/1.png"></img>
+                <div class="text-block">Ju Hong came from a lower-income background and his family struggled to deal
+                    with debts. He also dealt with troubles at home before moving to the United States. His mother
+                    decided to take the chance and move to a completely unfamiliar land which they knew almost nothing
+                    about, to find new opportunities for a better life. There was just nothing left in South Korea for
+                    them anymore. Ju initially struggled to assimilate into American life, but if that wasn’t enough, he
+                    soon had to deal with being undocumented - which he soon found out was more than just a
+                    label.<sup>[5]</sup>
+                </div>
             </div>
             </p>
         </div>
-        <div class="sadToHappy"></div>
-        <div class="panel happy" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-        <div class="panel" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
+        <div class="panel" style="background-color: #00224d;color: #ffffff;">
+            <div class="container">
+                <img class="info"
+                    src="images/2.png"></img>
+                <div class="text-block">Ju Hong came from a lower-income background and his family struggled to deal
+                    with debts. He also dealt with troubles at home before moving to the United States. His mother
+                    decided to take the chance and move to a completely unfamiliar land which they knew almost nothing
+                    about, to find new opportunities for a better life. There was just nothing left in South Korea for
+                    them anymore. Ju initially struggled to assimilate into American life, but if that wasn’t enough, he
+                    soon had to deal with being undocumented - which he soon found out was more than just a
+                    label.<sup>[5]</sup>
+                </div>
+            </div>
         </div>
     </div>
     <div>
-        <h2 style="text-align: center; height: auto;">Building Community</h2>
-        <div class="panel sad" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.<sup><a
-                        href="citations.html">[1]</a></sup>
+        <h2 style="text-align: center; height: auto;"><a href="background/reality.html">The Harsh Reality</a></h2>
+        <div class="panel" style="background-color: #fff5cd">
             <div class="container">
-                <span class="info">🛈</span>
-                <div class="text-block">This is the text block that appears on hover.</div>
+                <img class="info"
+                    src="images/3.png"></img>
+                <div class="text-block">Ju Hong’s first acceptance letter was to U.C Davis, and he was accepted to other
+                    renowned universities and colleges. He was overjoyed and thought that his hard work had finally paid
+                    off. However, the reality soon hit him: he would be ineligible for financial aid due to his
+                    immigration status. It would have been incredibly expensive for him to enroll. Ju’s mother was
+                    already struggling to pay for their rent. He eventually had to turn most of his offers down and had
+                    to attend a community college instead. This is where he started to learn about what it meant to be
+                    undocumented.<sup>[5]</sup>
+                </div>
             </div>
-            </p>
         </div>
-        <div class="sadToHappy"></div>
-        <div class="panel happy" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-        <div class="panel" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
+        <div class="panel" style="background-color: #d8d8d8;">
+            <div class="container">
+                <img class="info"
+                    src="images/4.png"></img>
+                <div class="text-block">Ju Hong’s first acceptance letter was to U.C Davis, and he was accepted to other
+                    renowned universities and colleges. He was overjoyed and thought that his hard work had finally paid
+                    off. However, the reality soon hit him: he would be ineligible for financial aid due to his
+                    immigration status. It would have been incredibly expensive for him to enroll. Ju’s mother was
+                    already struggling to pay for their rent. He eventually had to turn most of his offers down and had
+                    to attend a community college instead. This is where he started to learn about what it meant to be
+                    undocumented.<sup>[5]</sup>
+                </div>
+            </div>
         </div>
     </div>
     <div>
-        <h2 style="text-align: center; height: auto;">Becoming an Advocate</h2>
-        <div class="panel sad" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.<sup><a
-                        href="citations.html">[1]</a></sup>
+        <h2 style="text-align: center; height: auto;"><a href="background/alone.html">I'm Not Alone</a></h2>
+        <div class="panel" style="background-color: #e1e4ed;">
             <div class="container">
-                <span class="info">🛈</span>
-                <div class="text-block">This is the text block that appears on hover.</div>
+                <img class="info"
+                    src="images/5.png"></img>
+                <div class="text-block">Initially, Ju felt left out when he heard other students talking about which
+                    colleges they would be attending. He felt like a completely different person, stopped interacting
+                    with most of his friends, and started becoming depressed. It was a difficult period in life for him.
+                    However, he slowly began finding stories of other undocumented immigrants. Meeting up and having
+                    meaningful conversations with other students in exact or similar positions as Ju really shaped the
+                    trajectory of Ju’s life for the better. Ju realized the lack of public information and also realized
+                    that a lot more students were like him, which made him feel much better and inspired about his
+                    situation.<sup>[5]</sup>
+                </div>
             </div>
-            </p>
         </div>
-        <div class="sadToHappy"></div>
-        <div class="panel happy" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-        <div class="panel" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
+        <div class="panel" style="background-color: #fff5cd;">
+            <div class="container">
+                <img class="info"
+                    src="images/6.png"></img>
+                <div class="text-block">Initially, Ju felt left out when he heard other students talking about which
+                    colleges they would be attending. He felt like a completely different person, stopped interacting
+                    with most of his friends, and started becoming depressed. It was a difficult period in life for him.
+                    However, he slowly began finding stories of other undocumented immigrants. Meeting up and having
+                    meaningful conversations with other students in exact or similar positions as Ju really shaped the
+                    trajectory of Ju’s life for the better. Ju realized the lack of public information and also realized
+                    that a lot more students were like him, which made him feel much better and inspired about his
+                    situation.<sup>[5]</sup>
+                </div>
+            </div>
         </div>
     </div>
     <div>
-        <h2 style="text-align: center; height: auto;">Setbacks and Legal Challenges</h2>
-        <div class="panel sad" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.<sup><a
-                        href="citations.html">[1]</a></sup>
+        <h2 style="text-align: center; height: auto;"><a href="background/advocate.html">Becoming an Advocate</a>
+        </h2>
+        <div class="panel" style="background-color: #ccd8c8">
             <div class="container">
-                <span class="info">🛈</span>
-                <div class="text-block">This is the text block that appears on hover.</div>
+                <img class="info"
+                    src="images/7.png"></img>
+                <div class="text-block">Some of the many initiatives Ju took ahold of were “an anonymous blog about
+                    being an undocumented student,” “writing a column for the Laney Community College paper, posting a
+                    YouTube video in which he talked openly about being undocumented, and eventually running for
+                    president of the student body,” which together, started to give You ample momentum for the future
+                    and therefore creating quite a bit of an impact when it meant the most to him (Hong).<sup>[5]</sup>
+                </div>
             </div>
-            </p>
         </div>
-        <div class="sadToHappy"></div>
-        <div class="panel happy" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-        <div class="panel" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
+        <div class="panel" style="background-color: #dcf4d4;">
+            <div class="container">
+                <img class="info"
+                    src="images/8.png"></img>
+                <div class="text-block">Some of the many initiatives Ju took ahold of were “an anonymous blog about
+                    being an undocumented student,” “writing a column for the Laney Community College paper, posting a
+                    YouTube video in which he talked openly about being undocumented, and eventually running for
+                    president of the student body,” which together, started to give You ample momentum for the future
+                    and therefore creating quite a bit of an impact when it meant the most to him (Hong).<sup>[5]</sup>
+                </div>
+            </div>
         </div>
     </div>
     <div>
-        <h2 style="text-align: center; height: auto;">Perseverance and Growth</h2>
-        <div class="panel sad" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.<sup><a
-                        href="citations.html">[1]</a></sup>
+        <h2 style="text-align: center; height: auto;"><a href="background/growth.html">Perseverance and Growth</a></h2>
+        <div class="panel" style="background-color: #e4ffe7">
             <div class="container">
-                <span class="info">🛈</span>
-                <div class="text-block">This is the text block that appears on hover.</div>
+                <img class="info"
+                    src="images/9.png"></img>
+                <div class="text-block">The DREAM Act evidently meant a lot to Ju Hong, because it gave him the chance to not have to pay an enormous amount to college when it was unfeasible for his family, and it gave Ju the chance to continue speaking out at quite a few different avenues. Apart from his self-started blog and his in-school involvements, Ju’s impact grew as he additionally worked with “did phone banking, press conferences, petition drives, events and rallies,” and more too (Hong). Furthermore, additionally from Ju’s perspective, we can see the extensive portfolio of involvement he built up when he tells us, “I spoke at many different conferences, and I wrote my own opinion column for a Berkeley newspaper. I also did interviews with the national media and shared my testimony.” (Hong). Take it from Ju: every step is meaningful, even if in the moment, nothing seems to be meaningful. It will end up being fine!<sup>[5]</sup>
+                </div>
             </div>
-            </p>
         </div>
-        <div class="sadToHappy"></div>
-        <div class="panel happy" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-        <div class="panel" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-    </div>
-    <div>
-        <h2 style="text-align: center; height: auto;">Conclusion</h2>
-        <div class="panel sad" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.<sup><a
-                        href="citations.html">[1]</a></sup>
+        <div class="panel" style="background-color: #fff5cd">
             <div class="container">
-                <span class="info">🛈</span>
-                <div class="text-block">This is the text block that appears on hover.</div>
+                <img class="info"
+                    src="images/10.png"></img>
+                <div class="text-block">The DREAM Act evidently meant a lot to Ju Hong, because it gave him the chance to not have to pay an enormous amount to college when it was unfeasible for his family, and it gave Ju the chance to continue speaking out at quite a few different avenues. Apart from his self-started blog and his in-school involvements, Ju’s impact grew as he additionally worked with “did phone banking, press conferences, petition drives, events and rallies,” and more too (Hong). Furthermore, additionally from Ju’s perspective, we can see the extensive portfolio of involvement he built up when he tells us, “I spoke at many different conferences, and I wrote my own opinion column for a Berkeley newspaper. I also did interviews with the national media and shared my testimony.” (Hong). Take it from Ju: every step is meaningful, even if in the moment, nothing seems to be meaningful. It will end up being fine!<sup>[5]</sup>
+                </div>
             </div>
-            </p>
-        </div>
-        <div class="sadToHappy"></div>
-        <div class="panel happy" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
-        </div>
-        <div class="panel" style="text-align:center;height: auto;">
-            <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></img><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non dui in nibh porttitor viverra.</p>
         </div>
     </div>
 </body>
