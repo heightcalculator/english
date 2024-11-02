@@ -1,0 +1,192 @@
+<style>
+    body {
+        margin: auto;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #navBar {
+        position: relative;
+        left: 0px;
+        height: 5.5vh;
+        width: 100%;
+        background-color: black;
+        color: rgb(240, 240, 240);
+        font-size: 3vh;
+        text-align: right;
+        margin: auto;
+        padding-top: 2vh;
+    }
+
+    #navBar a {
+        color: inherit;
+        /* blue colors for links too */
+        text-decoration: inherit;
+        /* no underline */
+    }
+
+    body {
+        margin: none;
+        text-align: center;
+        background-color: rgb(29, 29, 29);
+    }
+
+    h1 {
+        padding-top: 0.5vh;
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: beige;
+    }
+
+    p {
+        text-align: left;
+        margin-right: 6vw;
+        margin-left: 6vw;
+        padding-bottom: 1vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: rgb(240, 240, 240);
+        text-indent: 36px;
+    }
+
+    .main {
+        min-height: 20vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .album {
+        flex: 0;
+        border-radius: 10%;
+        height: 35vh;
+        max-width: 90vw;
+        aspect-ratio: 4/3 auto;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        aspect-ratio: inherit;
+    }
+
+    .textImg {
+        height: 50vh;
+        width: auto;
+        border-radius: 10%;
+        aspect-ratio: initial;
+        text-align: center;
+    }
+
+    .hover {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 10%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .hover p {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+    }
+
+    .hover .imgtitle {
+        margin-top: 10.5vh;
+        font-size: 6vh;
+    }
+
+    a {
+        color: aqua;
+    }
+</style>
+
+<body>
+    <div id="navBar">
+        <a href="../index.html"><span style="padding-right: 15px">Graphic Narrative</span></a>
+        <a href="../background.html"><span style="padding-right: 15px">Background</span></a>
+        <a href="../statement.html"><span style="padding-right: 15px">Artist Statement</span></a>
+        <a href="../citations.html"><span style="padding-right: 20px">Citations</span></a>
+    </div>
+    <h1>I'm Not Alone</h1>
+    <div class="main" style="margin-left: 100px; margin-right: 100px;">
+        <div class="album">
+            <image src="../images/5.png">
+            </image>
+        </div>
+        <div class="album">
+            <image src="../images/6.png">
+            </image>
+        </div>
+    </div>
+    <p>
+        Undocumented students such as Ju often had to fight instead of study in school due to their lack of rights. One
+        such student in California was Gladys Castro, a high school student accepted in U.C Berkeley. However, she is in
+        a similar situation: she cannot apply for government loans and must spend her days protesting and speaking at
+        rallys.
+    </p>
+    <p>
+        “Instead of studying, she sharpened her focus on advocating for the federal Development, Relief and Education
+        for Alien Minors Act, also known as the Dream Act, a bill working its way through Congress that by some
+        estimates would help roughly 65,000 illegal immigrants each year who graduate from high school and meet other
+        requirements.” <a
+            href="https://www.sbsun.com/2010/08/13/undocumented-immigrant-student-engages-in-summer-of-activism/">Read
+            More</a>
+    </p>
+    <p>
+        “Hundreds of undocumented students are risking deportation by committing civil disobedience for the immigration
+        reform bill known as the Dream Act. One California protester demonstrated Tuesday outside the office of
+        Democratic Senator Harry Reid of Nevada.”
+    </p>
+    <p>
+        This is specifically how Californian college students protested to have the U.S Senate Majority Leader schedule
+        a vote on the Dream Act. “That measure would grant legal residency to undocumented students who graduate from
+        high school.”
+    </p>
+    <p>
+        These students are taking the risk despite knowing they could very well be deported. <a
+            href="https://archive.laist.com/news/2010/07/21/17548/undocumented-grad-risks-deportation/"> Read More</a>
+    </p>
+    <img class="textImg"
+        src="https://static01.nyt.com/images/2010/05/02/us/02immig_span-CA0/02immig_CA0-articleLarge.jpg"></img>
+    <p>
+        The law in particular was from Arizona which required state law enforcement to ask those suspicious of being
+        undocumented to present their papers and present proof of legal immigration.
+    </p>
+    <img class="textImg"
+        src="https://www.reckon.news/resizer/v2/ZWYIWQXYZJBCTJTTT6A2PBMNNU.JPG?auth=f05ae5d8410dd8c26aab0902f8370d2feafe29322a93a45a025580697ca56bde&width=1440&height=1058"></img>
+    <p>
+        Jorge Herrera Undocumented college student Jorge Herrera, 18, center, of Carson, Calif., rallies with students
+        and Dream Act supporters in Los Angeles, Saturday, Dec. 18, 2010. (AP Photo/Jason Redmond) (ap/TT ASSOCIATED
+        PRESS)
+    </p>
+</body>

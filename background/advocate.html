@@ -1,0 +1,158 @@
+<style>
+    body {
+        margin: auto;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #navBar {
+        position: relative;
+        left: 0px;
+        height: 5.5vh;
+        width: 100%;
+        background-color: black;
+        color: rgb(240, 240, 240);
+        font-size: 3vh;
+        text-align: right;
+        margin: auto;
+        padding-top: 2vh;
+    }
+
+    #navBar a {
+        color: inherit;
+        /* blue colors for links too */
+        text-decoration: inherit;
+        /* no underline */
+    }
+
+    body {
+        margin: none;
+        text-align: center;
+        background-color: rgb(29, 29, 29);
+    }
+
+    h1 {
+        padding-top: 0.5vh;
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: beige;
+    }
+
+    p {
+        text-align: left;
+        margin-right: 6vw;
+        margin-left: 6vw;
+        padding-bottom: 1vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: rgb(240, 240, 240);
+        text-indent: 36px;
+    }
+
+    .main {
+        min-height: 20vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .album {
+        flex: 0;
+        border-radius: 10%;
+        height: 35vh;
+        max-width: 90vw;
+        aspect-ratio: 4/3 auto;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        aspect-ratio: inherit;
+    }
+
+    .hover {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 10%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .hover p {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+    }
+
+    .hover .imgtitle {
+        margin-top: 10.5vh;
+        font-size: 6vh;
+    }
+
+    a {
+        color: aqua;
+    }
+</style>
+
+<body>
+    <div id="navBar">
+        <a href="../index.html"><span style="padding-right: 15px">Graphic Narrative</span></a>
+        <a href="../background.html"><span style="padding-right: 15px">Background</span></a>
+        <a href="../statement.html"><span style="padding-right: 15px">Artist Statement</span></a>
+        <a href="../citations.html"><span style="padding-right: 20px">Citations</span></a>
+    </div>
+    <h1>Becoming an Advocate</h1>
+    <div class="main" style="margin-left: 100px; margin-right: 100px;">
+        <div class="album">
+            <image src="../images/7.png">
+            </image>
+        </div>
+        <div class="album">
+            <image src="../images/8.png">
+            </image>
+        </div>
+    </div>
+    <p>
+        This is what the DREAM Act looked like federally when Obama was president: <a
+            href="https://obamawhitehouse.archives.gov/blog/2010/12/01/get-facts-dream-act">Get Facts</a>. This has not
+        officially been passed into federal law, but it is crucial as it reflects what was promised to students during
+        Ju Hong’s time in school. If it were passed then, it would have greatly improved the lives of undocumented
+        students.
+    </p>
+    <p>
+        The statewide DREAM Act was actually passed by Governor Jerry Brown, and Ju Hong specifically cites this in his
+        article. This move greatly helped the situation of students like Ju in California. Unfortunately, only a handful
+        of other states, such as New York, Texas, and Illinois, have implemented a statewide DREAM act.</p>
+    <p>
+        In response to DREAM failing to pass both houses, Obama took the step of introducing the DACA immigration
+        policy. This was initiated by President Obama in 2012, and Ju Hong is a DACA recipient. DACA is essentially a policy that defers the potential deportment of an undocumented student by two years and provides eligibility on a work permit. <a href="https://library.law.howard.edu/civilrightshistory/immigration/daca">Read More</a>
+    </p>
+</body>

@@ -1,0 +1,173 @@
+<style>
+    body {
+        margin: auto;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #navBar {
+        position: relative;
+        left: 0px;
+        height: 5.5vh;
+        width: 100%;
+        background-color: black;
+        color: rgb(240, 240, 240);
+        font-size: 3vh;
+        text-align: right;
+        margin: auto;
+        padding-top: 2vh;
+    }
+
+    #navBar a {
+        color: inherit;
+        /* blue colors for links too */
+        text-decoration: inherit;
+        /* no underline */
+    }
+
+    body {
+        margin: none;
+        text-align: center;
+        background-color: rgb(29, 29, 29);
+    }
+
+    h1 {
+        padding-top: 0.5vh;
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: beige;
+    }
+
+    p {
+        text-align: left;
+        margin-right: 6vw;
+        margin-left: 6vw;
+        padding-bottom: 1vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: rgb(240, 240, 240);
+        text-indent: 36px;
+    }
+
+    .main {
+        min-height: 20vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .album {
+        flex: 0;
+        border-radius: 10%;
+        height: 35vh;
+        max-width: 90vw;
+        aspect-ratio: 4/3 auto;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        aspect-ratio: inherit;
+    }
+
+    .hover {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 10%;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .hover p {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+    }
+
+    .hover .imgtitle {
+        margin-top: 10.5vh;
+        font-size: 6vh;
+    }
+
+    a {
+        color: aqua;
+    }
+</style>
+
+<body>
+    <div id="navBar">
+        <a href="../index.html"><span style="padding-right: 15px">Graphic Narrative</span></a>
+        <a href="../background.html"><span style="padding-right: 15px">Background</span></a>
+        <a href="../statement.html"><span style="padding-right: 15px">Artist Statement</span></a>
+        <a href="../citations.html"><span style="padding-right: 20px">Citations</span></a>
+    </div>
+    <h1>Struggles and Injustice</h1>
+    <div class="main" style="margin-left: 100px; margin-right: 100px;">
+        <div class="album">
+            <image src="../images/1.png">
+            </image>
+        </div>
+        <div class="album">
+            <image src="../images/2.png">
+            </image>
+        </div>
+    </div>
+    <p>
+        During the time Ju Hong grew up in the United States (2000-2010), undocumented students in California had to
+        deal with many financial constraints that made it more difficult for them to attend college. Firstly, it should
+        be noted that no federal law prevents undocumented students from attending public colleges or universities.
+        Plyler v. Doe (1982) ruled that it was impossible for any state to “deny school-aged undocumented aliens the
+        right to a free education” (Badger et al). No federal law has overruled this case. Still, some states, such as
+        California, have dealt with many cases and laws that deal with how much money undocumented students will have to
+        pay to attend school. California attempted to completely bar undocumented students from attending its public
+        colleges and universities but this attempt was struck down in the late 1990s.</p>
+    <p>
+        The next issue was whether undocumented students should receive resident tuition benefits at public colleges or
+        universities. The history of this in California is interesting and can be further viewed at (article link
+        below). However, there is a big difference in what residents pay compared to non-residents: “Residents pay
+        approximately $1000 per semester for all their fees, when enrolled as full-time students. Non-residents pay this
+        same basic fee, but, in addition, pay $246 per unit of coursework” (Badger et al).</p>
+    <p>
+        As of 1996 - the California State University system (CSU) started charging undocumented students non-resident
+        fees and this was likely in effect when Ju Hong was dealing with college admissions. Furthermore, Title IV of
+        the Higher Education Act of 1965 states that “only U.S. citizens and eligible non-citizens can receive federal
+        student financial aid. F and J students and scholars, for example, cannot receive federal student financial aid.
+        Neither can undocumented students”. Ju Hong was certainly not an “eligible non-citizen”. As such, one can
+        imagine the financial situation his family must have been in. They already escaped from Korea after they were
+        unable to pay their debts, and are dealing with similar struggles in the United States.</p>
+    <p>
+        Ju Hong’s article states that this was a big reason, “But then we found out how expensive it would be for me to
+        enroll, and we learned that I couldn’t get any financial aid because of my immigration status. My mom said I
+        shouldn’t worry about the financial problems and said she’d take care of it. But we were already struggling to
+        pay our rent, and it just wasn’t possible. And so I decided not to go. And then I started to learn more about
+        what it meant to be undocumented in the U.S., and that’s when everything hit me.” <a href="https://millermayer.com/2017/cant-go-home-undocumented-higher-education/">Read More</a>
+    </p>
+</body>
